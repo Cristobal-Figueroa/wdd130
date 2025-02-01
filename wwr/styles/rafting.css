@@ -1,6 +1,7 @@
 :root {
     --primary-color: #66999B;
-    --secondary-color: #B3AF8F;
+    --secondary-color: #323e4d;
+    --terciary-color: #f4eec3;
     --accent1-color: #66999B;
     --accent2-color: #496A81;
     --heading-font: "Roboto", serif;
@@ -8,11 +9,113 @@
 
 
   }
+  .footer {
+   
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+  }
+  
+  .footer p {
+    text-align: center;
+    justify-self: center; 
+    margin-left: 8rem;
+  }
+
+  .adventure img{
+    max-width: 13rem;
+    height: auto;
+  }
+  .adventure figure{
+    justify-content: center;
+    max-width: 13rem;
+  }
+  .adventure-container h2{
+    text-align: center;
+  }
+  .adventure{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: start;
+    border-bottom: 1px solid #ccc;
+    
+  }
+
+  .history-div{
+    display: grid;
+    justify-content: center;
+  }
+  .history img {
+    width: 43vh;
+    margin-bottom: 2rem;
+
+  }
+  .history-section h2{
+    text-align: center;
+
+  }
+  .history{
+    gap: 1rem;
+    margin: 1rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    border-bottom: 1px solid #ccc;
+    
+  }
+
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navigation li {
+    flex: 1 1 auto;
+  }
+  
+  .navigation a {
+    display: block;
+    color: navy;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .navigation a:hover {
+    color: tomato;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+ .header img {
+    margin: 0 0.25rem 0 100px;
+    width: 140px;
+    height: auto;
+  }
+  header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+  }
+  
   
   body {
     max-width: 1920px;
   }
-  
+  figcaption{
+    font-family: var(--text-font);
+    color: var(--secondary-color);
+    text-align: center;
+  }
   p{
     font-family: var(--text-font);
     color: var(--secondary-color);
@@ -25,8 +128,12 @@
 
   .sociallinks a, .header a{
     text-decoration: none;
+    
   }
-
+ 
+.hero p{
+  color: var(--terciary-color);
+}
   .hero {
     display: flex;
     position: relative; 
