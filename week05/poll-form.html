@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 130 | Cristobal Figureoa | HTML Form - User Poll</title>
+    <link rel="stylesheet" href="styles/poll-form.css"/>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-row">
+                    <div class="label-col">
+                        <label for="fullname">Full Name:</label>
+                    </div>
+                    <div class="input-col">
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="label-col">
+                        <label for="useremail">Email:</label>
+                    </div>
+                    <div class="input-col">
+                        <input type="email" id="useremail" name="useremail">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-row">
+                    <div class="label-col">
+                        <label for="browser">What is your favorite internet browser?</label>
+                    </div>
+                    <div class="input-col">
+                        <select id="browser" name="browser">
+                            <option value="chrome">Chrome</option>
+                            <option value="firefox">Firefox</option>
+                            <option value="safari">Safari</option>
+                            <option value="edge">Edge</option>
+                            <option value="brave">Brave</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="label-col">
+                        <label for="pet">Do you have a household pet?</label>
+                    </div>
+                    <div class="input-col">
+                        <input type="checkbox" id="pet" name="pet">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-col">
+                        <label for="feedback">List the places you have lived:</label>
+                        <textarea id="feedback" name="feedback" placeholder="Puerto Montt, Chillan, Oosorno"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2024 | HTML Form - User Poll Activity | Cristobal Figueroa</p>
+    </footer>
+</body>
+</html>
